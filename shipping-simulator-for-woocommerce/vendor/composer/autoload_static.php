@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4e014f4b24dd6546da984640a8df615f
+class ComposerStaticInit934b111d6349565ac57cbee28bff5662
 {
     public static $prefixLengthsPsr4 = array (
         'S' => 
@@ -37,6 +37,7 @@ class ComposerStaticInit4e014f4b24dd6546da984640a8df615f
         'Shipping_Simulator\\Core\\Traits\\Common_Helpers' => __DIR__ . '/../..' . '/core/Traits/Common_Helpers.php',
         'Shipping_Simulator\\Core\\Traits\\Config_Helpers' => __DIR__ . '/../..' . '/core/Traits/Config_Helpers.php',
         'Shipping_Simulator\\Core\\Traits\\Debug_Helpers' => __DIR__ . '/../..' . '/core/Traits/Debug_Helpers.php',
+        'Shipping_Simulator\\Core\\Traits\\Log_Helpers' => __DIR__ . '/../..' . '/core/Traits/Log_Helpers.php',
         'Shipping_Simulator\\Core\\Traits\\String_Helpers' => __DIR__ . '/../..' . '/core/Traits/String_Helpers.php',
         'Shipping_Simulator\\Core\\Traits\\Template_Helpers' => __DIR__ . '/../..' . '/core/Traits/Template_Helpers.php',
         'Shipping_Simulator\\Core\\Traits\\Throw_Helpers' => __DIR__ . '/../..' . '/core/Traits/Throw_Helpers.php',
@@ -60,9 +61,9 @@ class ComposerStaticInit4e014f4b24dd6546da984640a8df615f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4e014f4b24dd6546da984640a8df615f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4e014f4b24dd6546da984640a8df615f::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit4e014f4b24dd6546da984640a8df615f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit934b111d6349565ac57cbee28bff5662::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit934b111d6349565ac57cbee28bff5662::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit934b111d6349565ac57cbee28bff5662::$classMap;
 
         }, null, ClassLoader::class);
     }

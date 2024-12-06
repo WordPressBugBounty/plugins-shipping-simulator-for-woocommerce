@@ -17,6 +17,7 @@ return array(
     'Shipping_Simulator\\Core\\Traits\\Common_Helpers' => $baseDir . '/core/Traits/Common_Helpers.php',
     'Shipping_Simulator\\Core\\Traits\\Config_Helpers' => $baseDir . '/core/Traits/Config_Helpers.php',
     'Shipping_Simulator\\Core\\Traits\\Debug_Helpers' => $baseDir . '/core/Traits/Debug_Helpers.php',
+    'Shipping_Simulator\\Core\\Traits\\Log_Helpers' => $baseDir . '/core/Traits/Log_Helpers.php',
     'Shipping_Simulator\\Core\\Traits\\String_Helpers' => $baseDir . '/core/Traits/String_Helpers.php',
     'Shipping_Simulator\\Core\\Traits\\Template_Helpers' => $baseDir . '/core/Traits/Template_Helpers.php',
     'Shipping_Simulator\\Core\\Traits\\Throw_Helpers' => $baseDir . '/core/Traits/Throw_Helpers.php',
