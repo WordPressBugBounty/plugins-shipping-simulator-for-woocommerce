@@ -1,40 +1,59 @@
 === Shipping Simulator for WooCommerce ===
-Contributors: luizbills
-Donate link: https://luizpb.com/donate/
+Contributors: linknacional
+Donate link: https://linknacional.com.br/
 Tags: woocommerce, shipping simulator, simulador de frete, calculadora de frete, product page
-Stable tag: 2.4.4
-Requires at least: 4.9
-Requires PHP: 7.4
-Tested up to: 6.8
+Stable tag: 3.0.0
+Requires at least: 6.0
+Requires PHP: 8.2
+Tested up to: 7.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Allows customers to calculate the shipping rates on the product page in your WooCommerce store.
+Calculate shipping on product and cart pages, with free shipping rules, progress bar and address autofill for WooCommerce.
+
+*This plugin was specially designed for Brazilian stores, but it can be easily adapted (with hooks) to meet other needs.*
 
 == Description ==
 
-Allows customers to calculate the shipping rates on the product page in your WooCommerce store.
+Shipping Simulator for WooCommerce brings the shipping calculator to your customers while they are still browsing: directly on the product page and on the cart page. Instead of waiting until checkout, customers enter their postcode (CEP) and instantly see the available shipping methods, price and estimated delivery time.
 
-***This plugin was specially designed for brazilian stores**, but it can be easily adapted (with hooks) to meet other needs.*
+The plugin also helps increase your average order value with free shipping rules — by minimum cart amount or per product — and a configurable free-shipping progress bar that shows the customer how much is left to unlock free shipping. Results are cached and the last postcode is remembered, so repeated lookups are fast.
 
-= Features =
+= Calculator features =
 
 * Calculate shipping directly from the product page
+* Calculate shipping from the cart page
+* Free shipping by minimum amount and by product
+* Cart free-shipping progress bar with configurable messages
+* Automatic postcode lookup with cached results (the last postcode is remembered)
+* Visual customization of the fields: colors, borders, icons and position
+
+= Legacy simulator features =
+
 * Calculate shipping without having to choose variations (Check it on the plugin settings page)
-* Automatically fills in the customer's address (Check it on the plugin settings page)
+* Automatically fills in and updates the customer's address (Check it on the plugin settings page)
+* Customizable texts: title, placeholder, button and messages
 * If you are using some page builder, use the shortcode `[wc_shipping_simulator]`
+
+= PRO version =
+
+Upgrade to Shipping Simulator for WooCommerce PRO for advanced features:
+
+* CEP validation popup that asks visitors to confirm delivery availability, with WhatsApp contact when delivery isn't available
+* Hide the address fields automatically when the customer selects local pickup
+* Delivery time system: business days and hours, delivery time slots and order deadline tracking
 
 = Settings =
 
-Access your admin panel and open **WooCommerce > Settings > Shipping > Shipping Simulator** to configure the plugin.
+Access your admin panel and open **WooCommerce > Settings > Calculadora de frete** to configure the new shipping calculator, free shipping and progress bar options. The previous simulator settings still exist and are now available as **WooCommerce > Settings > Shipping > Simulador de Frete (Legado)**.
 
-= Contribuitions =
+= Contributions =
 
-For bugs, suggestions or contribuitions, open a issue in our [Github Repository](https://github.com/luizbills/shipping-simulator-for-woocommerce/issues) or create a topic in [WordPress Plugin Forum](https://wordpress.org/support/plugin/shipping-simulator-for-woocommerce/).
+For bugs, suggestions or contributions, open an issue in our [GitHub Repository](https://github.com/LinkNacional/shipping-simulator-for-woocommerce/issues) or create a topic in the [WordPress Plugin Forum](https://wordpress.org/support/plugin/shipping-simulator-for-woocommerce/).
 
 = Donations =
 
-Support this plugin on [https://luizpb.com/donate/](https://luizpb.com/donate/)
+Support this plugin on [https://linknacional.com.br/](https://linknacional.com.br/)
 
 == Frequently Asked Questions ==
 
@@ -47,8 +66,33 @@ You can ask for help in the [Plugin Forum](https://wordpress.org/support/plugin/
 1. Shipping simulator demo (in portuguese)
 2. Shipping simulator without results (in portuguese)
 3. Access the Settings to configure the plugin.
+4. Shipping calculator settings page (Calculadora de frete)
+5. Cart using the WooCommerce shortcode (before)
+6. Cart using the WooCommerce shortcode (after)
+7. Free shipping progress bar in Gutenberg cart
+8. Free shipping progress bar in Gutenberg checkout
+9. Free shipping progress bar in legacy cart
+10. Free shipping progress bar in legacy checkout
+11. Postcode (CEP) calculator component
+12. Postcode (CEP) calculator component layout
 
 == Changelog ==
+
+= 3.0.0 =
+
+-   Added a new postcode (CEP) shipping calculator on product and cart pages with automatic address autofill, styled input and button, and a list of shipping methods with price and estimated delivery time.
+-   Calculator results are cached and the last postcode is remembered, avoiding unnecessary lookups.
+-   Added a cart free-shipping progress bar with configurable minimum amount, remaining-value and success messages.
+-   Added a per-product free shipping option and free-shipping-by-minimum-amount rules.
+-   Fixed hiding of checkout and cart address fields when shipping is disabled, including block, classic and shortcode checkout.
+-   Added a new "Shipping calculator" settings tab (WooCommerce > Settings) with options imported automatically from the woo-better plugin when present.
+
+= 2.5.0 =
+
+-   Removed the admin donation notice.
+-   Fixed text domain strings for better translation support.
+-   Requires WordPress 6.0+ and PHP 8.2+.
+-   Allow multiple shipping simulators on the same page (fixes Elementor compatibility).
 
 = 2.4.4 =
 
@@ -94,9 +138,12 @@ You can ask for help in the [Plugin Forum](https://wordpress.org/support/plugin/
 
 -   Fix: Street name duplicated in customer address.
 
-[See changelog for all versions](https://github.com/luizbills/shipping-simulator-for-woocommerce/blob/main/CHANGELOG.md)
+[See changelog for all versions](https://github.com/LinkNacional/shipping-simulator-for-woocommerce/blob/main/CHANGELOG.md)
 
 == Upgrade Notice ==
+
+= 3.0.0 =
+* The shipping calculator features moved from the woo-better plugin to here. Existing configurations are imported automatically.
 
 = 2.0.0 =
 * Remove simulator nonce validation and improved CSS

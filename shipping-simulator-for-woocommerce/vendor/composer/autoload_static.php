@@ -4,10 +4,10 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitcf11c72d4d53c21ab704b10569b23da6
+class ComposerStaticInit0ebffebf507b02320f4e68797ef498f0
 {
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'S' =>
         array (
             'Shipping_Simulator\\Core\\' => 24,
             'Shipping_Simulator\\' => 19,
@@ -15,11 +15,11 @@ class ComposerStaticInitcf11c72d4d53c21ab704b10569b23da6
     );
 
     public static $prefixDirsPsr4 = array (
-        'Shipping_Simulator\\Core\\' => 
+        'Shipping_Simulator\\Core\\' =>
         array (
             0 => __DIR__ . '/../..' . '/core',
         ),
-        'Shipping_Simulator\\' => 
+        'Shipping_Simulator\\' =>
         array (
             0 => __DIR__ . '/../..' . '/classes',
         ),
@@ -27,43 +27,14 @@ class ComposerStaticInitcf11c72d4d53c21ab704b10569b23da6
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Shipping_Simulator\\Admin\\Notices' => __DIR__ . '/../..' . '/classes/Admin/Notices.php',
-        'Shipping_Simulator\\Admin\\Plugin_Meta' => __DIR__ . '/../..' . '/classes/Admin/Plugin_Meta.php',
-        'Shipping_Simulator\\Admin\\Settings' => __DIR__ . '/../..' . '/classes/Admin/Settings.php',
-        'Shipping_Simulator\\Core\\Config' => __DIR__ . '/../..' . '/core/Config.php',
-        'Shipping_Simulator\\Core\\Dependencies' => __DIR__ . '/../..' . '/core/Dependencies.php',
-        'Shipping_Simulator\\Core\\Loader' => __DIR__ . '/../..' . '/core/Loader.php',
-        'Shipping_Simulator\\Core\\Main' => __DIR__ . '/../..' . '/core/Main.php',
-        'Shipping_Simulator\\Core\\Traits\\Common_Helpers' => __DIR__ . '/../..' . '/core/Traits/Common_Helpers.php',
-        'Shipping_Simulator\\Core\\Traits\\Config_Helpers' => __DIR__ . '/../..' . '/core/Traits/Config_Helpers.php',
-        'Shipping_Simulator\\Core\\Traits\\Debug_Helpers' => __DIR__ . '/../..' . '/core/Traits/Debug_Helpers.php',
-        'Shipping_Simulator\\Core\\Traits\\Log_Helpers' => __DIR__ . '/../..' . '/core/Traits/Log_Helpers.php',
-        'Shipping_Simulator\\Core\\Traits\\String_Helpers' => __DIR__ . '/../..' . '/core/Traits/String_Helpers.php',
-        'Shipping_Simulator\\Core\\Traits\\Template_Helpers' => __DIR__ . '/../..' . '/core/Traits/Template_Helpers.php',
-        'Shipping_Simulator\\Core\\Traits\\Throw_Helpers' => __DIR__ . '/../..' . '/core/Traits/Throw_Helpers.php',
-        'Shipping_Simulator\\Core\\Traits\\WordPress_Helpers' => __DIR__ . '/../..' . '/core/Traits/WordPress_Helpers.php',
-        'Shipping_Simulator\\Debug_Box' => __DIR__ . '/../..' . '/classes/Debug_Box.php',
-        'Shipping_Simulator\\Error' => __DIR__ . '/../..' . '/classes/Error.php',
-        'Shipping_Simulator\\Helpers' => __DIR__ . '/../..' . '/classes/Helpers.php',
-        'Shipping_Simulator\\Integration\\Autofill_Brazilian_Addresses' => __DIR__ . '/../..' . '/classes/Integration/Autofill_Brazilian_Addresses.php',
-        'Shipping_Simulator\\Integration\\Brazil' => __DIR__ . '/../..' . '/classes/Integration/Brazil.php',
-        'Shipping_Simulator\\Integration\\Estimating_Delivery' => __DIR__ . '/../..' . '/classes/Integration/Estimating_Delivery.php',
-        'Shipping_Simulator\\Integration\\Free_Shipping' => __DIR__ . '/../..' . '/classes/Integration/Free_Shipping.php',
-        'Shipping_Simulator\\Integration\\Melhor_Envio' => __DIR__ . '/../..' . '/classes/Integration/Melhor_Envio.php',
-        'Shipping_Simulator\\Integrations' => __DIR__ . '/../..' . '/classes/Integrations.php',
-        'Shipping_Simulator\\Logger' => __DIR__ . '/../..' . '/classes/Logger.php',
-        'Shipping_Simulator\\Request' => __DIR__ . '/../..' . '/classes/Request.php',
-        'Shipping_Simulator\\Shipping_Package' => __DIR__ . '/../..' . '/classes/Shipping_Package.php',
-        'Shipping_Simulator\\Shortcode' => __DIR__ . '/../..' . '/classes/Shortcode.php',
-        'Shipping_Simulator\\Tweaks' => __DIR__ . '/../..' . '/classes/Tweaks.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitcf11c72d4d53c21ab704b10569b23da6::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitcf11c72d4d53c21ab704b10569b23da6::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitcf11c72d4d53c21ab704b10569b23da6::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit0ebffebf507b02320f4e68797ef498f0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit0ebffebf507b02320f4e68797ef498f0::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit0ebffebf507b02320f4e68797ef498f0::$classMap;
 
         }, null, ClassLoader::class);
     }

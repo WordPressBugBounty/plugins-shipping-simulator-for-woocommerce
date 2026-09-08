@@ -1,0 +1,240 @@
+.wc-simulator-notice {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px;
+    border-left: 4px solid transparent;
+}
+
+.wc-simulator-notice--brand {
+    border-left-color: #5f3dc4;
+}
+
+.wc-simulator-notice--update {
+    border-left-color: #dba617;
+}
+
+.wc-simulator-notice__icon {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+.wc-simulator-notice__icon img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.wc-simulator-notice__content {
+    flex: 1 1 auto;
+}
+
+.wc-simulator-notice__content p {
+    margin: 0 0 12px;
+}
+
+.wc-simulator-notice__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 6px;
+    flex-wrap: wrap;
+}
+
+.wc-simulator-notice__badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.wc-simulator-notice--brand .wc-simulator-notice__badge {
+    background: #5f3dc4;
+    color: #fff;
+}
+
+.wc-simulator-notice--update .wc-simulator-notice__badge {
+    background: #dba617;
+    color: #1d2327;
+}
+
+.wc-simulator-notice--rollback {
+    border-left-color: #d63638;
+}
+
+.wc-simulator-notice--rollback .wc-simulator-notice__badge {
+    background: #d63638;
+    color: #fff;
+}
+
+.wc-simulator-notice--success {
+    border-left-color: #2e7d32;
+}
+
+.wc-simulator-notice--success .wc-simulator-notice__badge {
+    background: #2e7d32;
+    color: #fff;
+}
+
+.wc-simulator-notice--error {
+    border-left-color: #d63638;
+}
+
+.wc-simulator-notice--error .wc-simulator-notice__badge {
+    background: #d63638;
+    color: #fff;
+}
+
+.wc-simulator-success-card {
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+.wc-simulator-error-card {
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+.wc-simulator-rollback-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.wc-simulator-rollback-modal.is-open {
+    display: flex;
+}
+
+.wc-simulator-rollback-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.wc-simulator-rollback-modal__dialog {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 480px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.wc-simulator-rollback-modal__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    color: #787c82;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.wc-simulator-rollback-modal__close:hover {
+    color: #d63638;
+}
+
+.wc-simulator-rollback-modal__title {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.wc-simulator-rollback-modal__dialog p {
+    margin: 0 0 16px;
+    color: #50575e;
+}
+
+.wc-simulator-rollback-modal__description {
+    color: #787c82;
+    font-size: 13px;
+}
+
+.wc-simulator-rollback-modal__field {
+    margin-bottom: 16px;
+}
+
+.wc-simulator-rollback-modal__field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.wc-simulator-rollback-modal__field input,
+.wc-simulator-rollback-modal__field textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wc-simulator-rollback-modal__field textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.wc-simulator-rollback-modal__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.wc-simulator-rollback-confirm:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.wc-simulator-plugin-update-button {
+    position: relative !important;
+    overflow: hidden !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.wc-simulator-plugin-update-button__bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: #2e7d32;
+    z-index: 0;
+}
+
+.wc-simulator-plugin-update-button__text {
+    position: relative;
+    z-index: 1;
+}
+
+.wc-simulator-plugin-update-button.is-loading {
+    background: #e8f5e9 !important;
+    border-color: #2e7d32 !important;
+    color: #1e4620 !important;
+    cursor: progress !important;
+}
+
+.wc-simulator-plugin-update-button.is-success {
+    background: #c8e6c9 !important;
+    border-color: #2e7d32 !important;
+    color: #ffffff !important;
+}
+
+.wc-simulator-plugin-update-button.is-error {
+    background: #ffebee !important;
+    border-color: #c62828 !important;
+    color: #b71c1c !important;
+}
